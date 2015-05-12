@@ -52,7 +52,7 @@
     <a href="http://davereid.net">Dave Reid</a> / <a href="http://twitter.com/davereid">@davereid</a>
   </p>
   <p>
-    <a href="http://drupalmedia.github.io/d8-status-update">http://drupalmedia.github.io/d8-status-update</a>
+    <a href="http://drupal-media.github.io/d8-status-update">http://drupal-media.github.io/d8-status-update</a>
   </p>
   <h4>DrupalCon LA Edition</h4>
 </section>
@@ -76,18 +76,25 @@
 </section>
 
 <section>
-  <section>
-    <h2>Our Plan:</h2>
-    <h3>Independent components</h3>
-    <h3>Reusable components</h3>
-  </section>
+  <h1>The Plan:</h1>
+  <h3>Independent components</h3>
+  <h3>Reusable components</h3>
+  <h3>Pluggable components</h3>
+</section>
 
-  <section>
-  	<h2>The Components:</h2>
-  	<h3>Embedding / WYSWIYG</h3>
-  	<h3>Browsing and selection</h3>
-  	<h3>Storage</h3>
-  </section>
+<section>
+	<h1>Components:</h1>
+	<h3>Embedding / WYSWIYG</h3>
+	<h3>Browsing and selection</h3>
+	<h3>Storage</h3>
+</section>
+
+<section>
+	<h1>Goals:</h1>
+	<h3>Collaborative architecture</h3>
+	<h3>Collaborative resources</h3>
+	<h3>Momentum</h3>
+	<h3>Communication</h3>
 </section>
 
 <section>
@@ -121,17 +128,6 @@
 </section>
 
 <section>
-  <section>
-    <h2>Entity Browser</h2>
-    <h4>Status: In Progress</h4>
-  	<p><a href="https://www.drupal.org/project/entity_browser">https://www.drupal.org/project/entity_browser</a></p>
-  	<p>Completed:<ul><li>Architecture and API</li><li>Integration with Inline Entity Form</li></ul></p>
-  	<p>Remaining:<ul><li>UI for browser config entities</li><li>Views integration for selection</li></ul>
-  </section>
-</section>
-
-
-<section>
   <h3>Embed API</h3>
   <h4>Status: Starting soon with GSOC 2015</h4>
   <p><a href="https://www.drupal.org/project/embed">https://www.drupal.org/project/embed</a></p>
@@ -143,24 +139,38 @@
   <h4>Status: Starting soon with GSOC 2015</h4>
   <p><a href="https://www.drupal.org/project/url_embed">https://www.drupal.org/project/url_embed</a></p>
   <p>Allows embedding of URLs using the WYSIWYG or link fields.</p>
-  <p>Using the Embed library from https://github.com/oscarotero/Embed</p>
+  <pre><code><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" data-embed-display="html" /></code></pre>
+  <p>Using the Embed library from <a href="https://github.com/oscarotero/Embed">https://github.com/oscarotero/Embed</a><br/>which upports much more than oEmbed</p>
+  <p>Transform pasted embeddable URLs and embed codes in WYSIWYG to normalized HTML tag.</p>
 </section>
 
 <section>
   <h3>Shortcode Embed</h3>
   <h4>Status: In Planning</h4>
   <p>Custom "macros" to convert <a href="http://codex.wordpress.org/Shortcode_API">shortcodes</a> to rendered HTML.</p>
+  <pre><code><drupal-shortcode data-shortcode="callout">My callout text</drupal-shortcode></code></pre>
 </section>
-
 
 <section>
   <section>
-    <h3>Media Entity</h3>
+    <h2>Entity Browser</h2>
+    <h4>Status: In Progress, GSOC 2015</h4>
+  	<p><a href="https://www.drupal.org/project/entity_browser">https://www.drupal.org/project/entity_browser</a></p>
+  	<p>Completed:<ul><li>Architecture and API</li><li>Integration with Inline Entity Form</li></ul></p>
+  	<p>Remaining:<ul><li>UI for browser config entities</li><li>Views integration for selection</li></ul>
+  </section>
+
+  <section>
+  	<img src="img/entity-browser-architecture.png" class="stretch" />
+  </section>
+
+  <section>
+  	<img src="img/entity-browser.png" class="stretch" />
   </section>
 </section>
 
 <section>
-  <h3>File Entity</h3>
+  <h2>File Entity</h2>
   <h4>Status: Stalled and needs regroup</h4>
   <p><a href="https://www.drupal.org/project/file_entity">https://www.drupal.org/project/file_entity</a></p>
   <p>Extends core's file entity type with fieldability and add/edit/delete forms.</p>
@@ -168,7 +178,32 @@
 </section>
 
 <section>
-  <h3>Crop API</h3>
+  <h2>Media</h2>
+  <h4>Status: Planning</h4>
+  <p><a href="https://www.drupal.org/project/media">https://www.drupal.org/project/media</a></p>
+  <p>Becomes a "glue" module that brings all the components together.
+  <p>Based on File Entity + Entity Browser config + Entity Embed button</p>
+</section>
+
+<section>
+  <section>
+    <h2>Media Entity</h2>
+    <h4>Status: Usable</h4>
+    <p><a href="https://www.drupal.org/project/media_entity">https://www.drupal.org/project/media_entity</a></p>
+    <p><a href="https://www.drupal.org/project/media_pinkeye"></a></p>
+  </section>
+
+  <section>
+  	<h2>Media Pinkeye</h2>
+  	<h4>Status: Usable</h4>
+  	<p><a href="https://www.drupal.org/project/media_pinkeye">https://www.drupal.org/project/media_pinkeye</a></p>
+  	<p>First module bringing everything together to work out of the box</p>
+  	<p>Based on Media Entity + Entity Browser config</p>
+  </section>
+</section>
+
+<section>
+  <h2>Crop API</h2>
 	<h4>Status: Heavily In Progress</h4>
   <p><a href="https://www.drupal.org/project/crop">https://www.drupal.org/project/crop</a></p>
   <p>Provides basic API for image cropping. This module won't do much by itself. Users should pick one of UI modules that utilize this API.</p>
@@ -178,7 +213,7 @@
 
 <section>
 	<section>
-		<h3>Fallback formatter</h3>
+		<h2>Fallback formatter</h2>
 		<h4>Status: Usable, but not passing tests?</h4>
 		<p><a href="https://www.drupal.org/project/fallback_formatter">https://www.drupal.org/project/fallback_formatter</a></p>
 		<p>Provides a field formatter that can attempt multiple formatters and the first one that returns output for each value wins.</p>
@@ -190,18 +225,46 @@
 </section>
 
 <section>
-  <h3>Recycled Formatters</h3>
+  <h2>Recycled Formatters</h2>
   <h4>Status: In Planning</h4>
   <p><a href="https://github.com/drupal-media/recycled_formatters">https://github.com/drupal-media/recycled_formatters</a><br>
   <a href="https://www.drupal.org/project/file_image_formatters">https://www.drupal.org/project/file_image_formatters</a></p>
   <p>Allow formatters to be shared between image, file, and entity_reference fields.</p>
 </section>
 
-
-
+<section>
+  <h2>File Download</h2>
+  <h4>Status: In Planning</h4>
+  <p>URL for direct downloads of file entities, logging downloads, etc.</p>
+</section>
 
 <section>
-  <h2>How to get involved?</h2>
+  <h1>Struggles</h1>
+  <h3>Communication</h3>
+  <h3>Momentum</h3>
+  <h3>Funding</h3>
+</section>
+
+<section>
+  <h2>Composer and Drupal 8</h2>
+  <h3>BOF @ 5-6 PM today (Tuesday)<br/>Room 410</h3>
+</section>
+
+<section>
+	<h2>Github vs Drupal.org</h2>
+	<h3>Issue Workspaces session<br/>@ 2:15-3:15 PM Wednesday<br/>Pantheon Room 511BC</h3>
+</section>
+
+<section>
+  <h1>How to get involved?</h1>
+</section>
+
+<section>
+  <h2>Awesome contributors</h2>
+</section>
+
+<section>
+  <h2>Resources</h2>
   <ul>
     <li>weekly scrum meetings on #drupal-media IRC</li>
     <li><a href="https://github.com/drupal-media">github.com/drupal-media</a></li>
@@ -225,16 +288,14 @@
 </section>
 
 <section>
-  Awesome contributors
-</section>
-
-
-<section>
   <h1>Thank you!</h1>
   <h3>Questions?</h3>
   <p>Evaluate this session at <a href="https://events.drupal.org/losangeles2015/schedule">https://events.drupal.org/losangeles2015/schedule</a></p>
   <p>
     <a href="http://davereid.net">Dave Reid</a> / <a href="http://twitter.com/davereid">@davereid</a>
+  </p>
+  <p>
+    <a href="http://drupal-media.github.io/d8-status-update">http://drupal-media.github.io/d8-status-update</a>
   </p>
 </section>
 
