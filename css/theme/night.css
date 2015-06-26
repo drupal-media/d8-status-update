@@ -76,7 +76,7 @@ body {
 
 .reveal ol, .reveal dl, .reveal ul {
   display: inline-block;
-  text-align: left;
+  text-align: left !important;
   margin: 0 0 0 1em; }
 
 .reveal ol {
