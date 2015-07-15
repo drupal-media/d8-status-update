@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Drupal 8 Media Status Update</title>
+    <title>Drupal Media Status</title>
 
     <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
     <meta name="author" content="Dave Reid">
@@ -42,15 +42,15 @@
       <div class="slides">
 
 <section>
-  <img src="img/tcdrupal.png" style="border: none; height: 300px" /><img src="img/drupal-media.png" style="border: none; height: 300px" />
-  <h2>Drupal 8 Media Status Update</h2>
+  <img src="img/un.svg" style="border: none; height: 300px" /><img src="img/drupal-media.png" style="border: none; height: 300px" />
+  <h2>Drupal Media Status</h2>
   <p>
     <a href="https://www.drupal.org/u/dave-reid">Dave Reid</a> / <a href="http://twitter.com/davereid">@davereid</a>
   </p>
   <p>
     <a href="http://drupal-media.github.io/d8-status-update">drupal-media.github.io/d8-status-update</a>
   </p>
-  <h4>Twin Cities Drupal Camp 2015 Edition</h4>
+  <h4>NYC Camp 2015 Edition</h4>
 </section>
 
 <section>
@@ -69,6 +69,86 @@
 
 <section>
   <img src="img/nyc.jpg" class="stretch" />
+</section>
+
+<section>
+  <h1>Drupal 7</h1>
+</section>
+
+<section>
+  <h2>What is in Drupal 7?</h2>
+  <h3>File fields</h3>
+  <p><img src="img/d7-file-field.png" /><br/><img src="img/d7-file-field2.png" /></p>
+</section>
+
+<section>
+  <h2>What is in Drupal 7?</h2>
+  <h3>Image fields</h3>
+  <p><img src="img/d7-image-field.png" /><br/><img src="img/d7-image-field2.png" /></p>
+</section>
+
+<section>
+  <h2>Drupal 7 limitations</h2>
+  <p>File interactions limited to fields</p>
+  <p>Unused files deleted after 6 hours</p>
+</section>
+
+<section>
+  <h2>File Entity</h2>
+  <p><a href="https://www.drupal.org/project/file_entity">drupal.org/project/file_entity</a></p>
+  <p>
+</section>
+
+<section>
+  <h2>File Lock</h2>
+  <p><a href="https://www.drupal.org/project/file_lock">drupal.org/project/file_lock</a></p>
+</section>
+
+<section>
+  <h2>Media</h2>
+  <p><a href="https://www.drupal.org/project/media">drupal.org/project/media</a></p>
+  <p>
+</section>
+
+<section>
+  <h2>Media oEmbed</h2>
+  <p><a href="https://www.drupal.org/project/media_oembed">drupal.org/project/media_oembed</a></p>
+</section>
+
+<section>
+  <h2>Media CKEditor</h2>
+  <p><a href="https://www.drupal.org/project/media_ckeditor">drupal.org/project/media_ckeditor</a></p>
+</section>
+
+<section>
+  <h2>What is in Drupal 8?</h2>
+  <h3>CKEditor + Basic image upload</h3>
+  <p><img src="img/d8-wysiwyg-upload.png" /></p>
+</section>
+
+<section>
+  <h2>What is in Drupal 8?</h2>
+  <h3>Basic file listing page</h3>
+  <p><img src="img/d8-file-listing.png" /></p>
+</section>
+
+<section>
+  <h2>What is in Drupal 8?</h2>
+  <h3>Basic file usage page</h3>
+  <p><img src="img/d8-file-usage.png" /></p>
+</section>
+
+<section>
+  <h2>What is in Drupal 8?</h2>
+  <h3>Configurable file cleanup</h3>
+  <p><img src="img/d8-file-cleanup-options.png"></p>
+</section>
+
+<section>
+  <h2>Drupal 8 limitations</h2>
+  <p>File interactions still limited to fields</p>
+  <p><del>Unused files deleted after 6 hours</del> YAY!</p>
+  <p>Only basic embedding support</p>
 </section>
 
 <section>
@@ -91,24 +171,19 @@
   <section>
     <h2>Entity Embed</h2>
     <p>Status: Usable</p>
-    <p><a href="https://www.drupal.org/project/entity_embed">https://www.drupal.org/project/entity_embed</a></p>
+    <p><a href="https://www.drupal.org/project/entity_embed">drupal.org/project/entity_embed</a></p>
     <p>Completed:<ul><li>Backported to Drupal 7</li><li>Improved UX of display configuration</li></ul></p>
     <p>Remaining:
       <ul>
         <li>Integrate selection with Entity Browser</li>
-        <li>Abstract to Embed API</li>
-        <li>Polish usability and skipping option form</li>
+        <li>Usability polish</li>
+        <li>Abstract to extend Entity API</li>
       </ul>
     </p>
   </section>
 
   <section>
-    <iframe src="http://drupal8.dev/" class="stretch" style="width: 100%"></iframe>
-  </section>
-
-  <section>
-    <h3>Chandan (@cs-shadow)</h3>
-    <img src="img/cs-shadow.jpeg" class="stretch" />
+    <img src="img/entity-embed-button-config.png" class="stretch" />
   </section>
 
   <section>
@@ -130,26 +205,22 @@
   <section>
     <img src="img/entity-embed-html.png" class="stretch" />
   </section>
-
-  <section>
-    <img src="img/entity-embed-button-config.png" class="stretch" />
-  </section>
 </section>
 
 <section>
   <h2>Embed API</h2>
-  <h4>Status: Starting soon with GSOC 2015</h4>
-  <p><a href="https://www.drupal.org/project/embed">https://www.drupal.org/project/embed</a></p>
+  <h4>Status: In progress</h4>
+  <p><a href="https://www.drupal.org/project/embed">drupal.org/project/embed</a></p>
   <p>Abstraction of reusable embedding concepts from Entity Embed.</p>
 </section>
 
 <section>
   <h2>URL Embed</h2>
-  <h4>Status: Starting soon with GSOC 2015</h4>
-  <p><a href="https://www.drupal.org/project/url_embed">https://www.drupal.org/project/url_embed</a></p>
+  <h4>Status: In progress with GSOC 2015</h4>
+  <p><a href="https://www.drupal.org/project/url_embed">drupal.org/project/url_embed</a></p>
   <p>Allows embedding of URLs using the WYSIWYG or link fields.</p>
   <pre><code><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" data-embed-display="html"></a></code></pre>
-  <p>Using the Embed library from <a href="https://github.com/oscarotero/Embed">https://github.com/oscarotero/Embed</a><br/>supports much more than just oEmbed</p>
+  <p>Using the Embed library from <a href="https://github.com/oscarotero/Embed">github.com/oscarotero/Embed</a><br/>supports much more than just oEmbed</p>
   <p>Transform pasted embeddable URLs and embed codes in WYSIWYG to normalized HTML tag.</p>
 </section>
 
@@ -163,8 +234,8 @@
 <section>
   <section>
     <h2>Entity Browser</h2>
-    <h4>Status: In Progress, GSOC 2015</h4>
-    <p><a href="https://www.drupal.org/project/entity_browser">https://www.drupal.org/project/entity_browser</a></p>
+    <h4>Status: In Progress</h4>
+    <p><a href="https://www.drupal.org/project/entity_browser">drupal.org/project/entity_browser</a></p>
     <p>Completed:<ul><li>Architecture and API</li><li>Integration with Inline Entity Form</li></ul></p>
     <p>Remaining:<ul><li>UI for browser config entities</li><li>Views integration for selection</li></ul>
   </section>
@@ -181,16 +252,16 @@
 <section>
   <h2>File Entity</h2>
   <h4>Status: Stalled and needs regroup</h4>
-  <p><a href="https://www.drupal.org/project/file_entity">https://www.drupal.org/project/file_entity</a></p>
+  <p><a href="https://www.drupal.org/project/file_entity">drupal.org/project/file_entity</a></p>
   <p>Extends core's file entity type with fieldability and add/edit/delete forms.</p>
   <p>Need to regroup on module scope.</p>
-  <p>Unofficial port: <a href="https://github.com/md-systems/file_entity">https://github.com/md-systems/file_entity</a></p>
+  <p>Unofficial port: <a href="https://github.com/md-systems/file_entity">github.com/md-systems/file_entity</a></p>
 </section>
 
 <section>
   <h2>Media</h2>
   <h4>Status: Planning</h4>
-  <p><a href="https://www.drupal.org/project/media">https://www.drupal.org/project/media</a></p>
+  <p><a href="https://www.drupal.org/project/media">drupal.org/project/media</a></p>
   <p>Becomes a "glue" module that brings all the components together.
   <p>Based on File Entity + Entity Browser config + Entity Embed button</p>
 </section>
@@ -199,7 +270,7 @@
   <section>
     <h2>Media Entity</h2>
     <h4>Status: Usable</h4>
-    <p><a href="https://www.drupal.org/project/media_entity">https://www.drupal.org/project/media_entity</a></p>
+    <p><a href="https://www.drupal.org/project/media_entity">drupal.org/project/media_entity</a></p>
     <p>Completed:
       <ul>
         <li>Basic editorial UI</li>
@@ -224,26 +295,17 @@
   <section>
     <h2>Media Pinkeye</h2>
     <h4>Status: Usable</h4>
-    <p><a href="https://www.drupal.org/project/media_pinkeye">https://www.drupal.org/project/media_pinkeye</a></p>
+    <p><a href="https://www.drupal.org/project/media_pinkeye">drupal.org/project/media_pinkeye</a></p>
     <p>First module bringing everything together to work out of the box</p>
     <p>Based on Media Entity + Entity Browser config</p>
   </section>
 </section>
 
 <section>
-  <h2>Crop API</h2>
-  <h4>Status: Heavily In Progress</h4>
-  <p><a href="https://www.drupal.org/project/crop">https://www.drupal.org/project/crop</a></p>
-  <p>Provides basic API for image cropping. This module won't do much by itself. Users should pick one of UI modules that utilize this API.</p>
-  <p>Completed:<ul><li>Basic API and cropping entity definitions</li><li>Integrations with file and media entities</li></ul></p>
-  <p>Remaining:<ul><li>UI (left for integrating modules?)</li></ul></p>
-</section>
-
-<section>
   <section>
     <h2>Fallback Formatter</h2>
     <h4>Status: Usable</h4>
-    <p><a href="https://www.drupal.org/project/fallback_formatter">https://www.drupal.org/project/fallback_formatter</a></p>
+    <p><a href="https://www.drupal.org/project/fallback_formatter">drupal.org/project/fallback_formatter</a></p>
     <p>Provides a field formatter that can attempt multiple formatters and the first one that returns output for each value wins.</p>
   </section>
 
@@ -255,8 +317,8 @@
 <section>
   <h2>Recycled Formatters</h2>
   <h4>Status: In Planning</h4>
-  <p><a href="https://github.com/drupal-media/recycled_formatters">https://github.com/drupal-media/recycled_formatters</a><br>
-  <a href="https://www.drupal.org/project/file_image_formatters">https://www.drupal.org/project/file_image_formatters</a></p>
+  <p><a href="https://github.com/drupal-media/recycled_formatters">github.com/drupal-media/recycled_formatters</a><br>
+  <a href="https://www.drupal.org/project/file_image_formatters">drupal.org/project/file_image_formatters</a></p>
   <p>Allow formatters to be shared between image, file, and entity_reference fields.</p>
 </section>
 
@@ -281,27 +343,24 @@
   <h2>Resources</h2>
   <ul>
     <li>Weekly scrum meetings on #drupal-media IRC</li>
+    <li><a href="http://www.drupalmedia.org/">drupalmedia.org</a></li>
     <li><a href="https://github.com/drupal-media">github.com/drupal-media</a></li>
-    <li><a href="https://drupalmedia.hackpad.com">drupalmedia.hackpad.com</a></li>
     <li><a href="http://groups.drupal.org/media">groups.drupal.org/media</a></li>
     <li>@Dave Reid - <a href="https://www.drupal.org/u/dave-reid">drupal.org/u/dave-reid</a></li>
-    <li><a href="https://trello.com/drupalmedia">trello.com/drupalmedia</a></li>
-    <li><a href="http://www.drupalmedia.org/">drupalmedia.org</a></li>
   </ul>
 </section>
 
 <section>
   <h2>Drupal 8 Media Guide</h2>
-  <p><a href="http://drupal-media.gitbooks.io/drupal8-guide">http://drupal-media.gitbooks.io/drupal8-guide</a></p>
+  <p><a href="http://drupal-media.gitbooks.io/drupal8-guide">drupal-media.gitbooks.io/drupal8-guide</a></p>
   <p><img src="img/media-guide.png" class="stretch" /></p>
 </section>
 
 <section>
   <h2>Upcoming events/sprints</h2>
-  <h3>Sunday sprint?</h3>
-  <h3>July 13-19: NYC Camp<br>(week-long media sprint)</h3>
-  <p><a href="http://nyccamp.org/">http://nyccamp.org/</a></p>
-  <h3>Your event here...</h3>
+  <h3>July 13-19: NYC Camp (NOW!)</h3>
+  <h3>August 12-15: MidWest Developer Summit (Chicago)</h3>
+  <h3>September 21-25: DrupalCon Barcelona</h3>
 </section>
 
 <section>

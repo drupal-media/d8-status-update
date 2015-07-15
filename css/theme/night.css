@@ -77,7 +77,8 @@ body {
 .reveal ol, .reveal dl, .reveal ul {
   display: inline-block;
   text-align: left !important;
-  margin: 0 0 0 1em; }
+  margin: 0 0 0 1em;
+  width: 100%; }
 
 .reveal ol {
   list-style-type: decimal; }
